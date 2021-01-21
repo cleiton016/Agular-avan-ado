@@ -19,6 +19,7 @@
 </div>
 
 <table class="table table-houver">
+
   <thead>
     <tr class="bg-primary text-light">
       <th>Categoria</th>
@@ -32,7 +33,7 @@
         <small>{{ item.description }}</small>
       </td>
       <td>
-        <a class="btn btn-outline-info btn-sm mr-2" [routerLink]="[12, 'edit']" >Editar</a>
+        <a class="btn btn-outline-info btn-sm mr-2" [routerLink]="[item.id, 'edit']" >Editar</a>
         <a class="btn btn-outline-danger btn-sm" (click) = "deleteCategory(item)">Excluir</a>
 
       </td>
